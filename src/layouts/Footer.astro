@@ -16,11 +16,15 @@ const activeShadow = "absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-r
                                 <a class={currentPath === "/" ? active : inactive } href="/">Home</a>
                                 <a class={currentPath === "about" ? active : inactive } href="/about">About</a>
                                 <a class={currentPath === "plans" ? active : inactive } href="/plans">Plans</a>
-                                <a class={currentPath === "projects" ? active : inactive } href="/projects" href="/speaking">Projects</a>
+                                <a class={currentPath === "projects" ? active : inactive } href="/projects">Portfolio</a>
                                 <a class={currentPath === "blog" ? active : inactive } href="/blog">Blog</a>
                             </div>
                             <p class="text-sm text-zinc-500 dark:text-zinc-400">
-                                © <!-- -->2024<!-- --> Gabriel Zambrano. All rights reserved.
+                                © <!-- -->{new Date().getFullYear()}<!-- --> Sevinci Sarl. All rights reserved.
+                                <span class="mx-1">•</span>
+                                <a href="/terms" class="hover:text-red-500 dark:hover:text-red-400">Terms</a>
+                                <span class="mx-1">•</span>
+                                <a href="/privacy" class="hover:text-red-500 dark:hover:text-red-400">Privacy</a>
                             </p>
                         </div>
                     </div>

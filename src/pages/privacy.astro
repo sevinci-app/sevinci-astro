@@ -1,0 +1,13 @@
+---
+import { getEntry } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+
+const privacy = await getEntry('legal', 'privacy');
+const { Content } = await privacy.render();
+---
+
+<MainLayout title={privacy.data.title} description={privacy.data.description}>
+  <div class="prose prose-zinc dark:prose-invert mx-auto px-4 py-8">
+    <Content />
+  </div>
+</MainLayout>

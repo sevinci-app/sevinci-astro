@@ -1,0 +1,12 @@
+---
+import { getEntry } from 'astro:content';
+import MainLayout from '../layouts/MainLayout.astro';
+
+const terms = await getEntry('legal', 'terms');
+const { Content } = await terms.render();
+---
+<MainLayout title={terms.data.title} description={terms.data.description}>
+  <div class="prose prose-zinc dark:prose-invert mx-auto px-4 py-8">
+    <Content />
+  </div>
+</MainLayout>

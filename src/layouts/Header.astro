@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import gab from "../assets/images/gab.jpg"
+import logo from "../images/logo.png"
 import ThemeIcon from "../components/ThemeIcon.astro"
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
@@ -19,11 +19,11 @@ const activeShadow = "absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-r
                             <div class="flex flex-1">
                                 <div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-2 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 hover:ring-red-500 dark:hover:ring-red-500">
                                     <a aria-label="Home" class="pointer-events-auto" href="/">
-                                        <Image src={gab} alt="gabriel avatar" class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9" />
+                                        <Image src={logo} alt="gabriel avatar" class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9" />
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex flex-1 justify-end md:justify-center" x-data="{ showMenu: false }">
+                            <div class="flex flex-1 justify-end md:justify-center" x-data="{ showMenu: false }" x-cloak>
                                 <div class="pointer-events-auto md:hidden">
                                     <button x-on:click="showMenu = !showMenu" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:R2miqla:">
                                         Menu
@@ -37,7 +37,7 @@ const activeShadow = "absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-r
                                 </div>
                                 
                                     
-                                    <div x-show="showMenu" x-on:click.outside="showMenu = false" class="pointer-events-auto absolute inset-x-4 z-50 origin-top rounded-3xl bg-white ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800">
+                                    <div x-cloak x-show="showMenu" x-on:click.outside="showMenu = false" class="pointer-events-auto absolute inset-x-4 z-50 origin-top rounded-3xl bg-white ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800">
                                         <ul class="rounded-xl bg-white/90 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                                             <li>
                                                 <a class={currentPath === "/" ? active : inactive } href="/">
@@ -56,7 +56,7 @@ const activeShadow = "absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-r
                                             </li>
                                             <li>
                                                 <a class={currentPath === "projects" ? active : inactive } href="/projects">
-                                                    Projects
+                                                    Portfolio
                                                     <span class={currentPath === "projects" ? activeShadow : "hidden"}></span> 
                                                 </a>
                                             </li>
@@ -88,7 +88,7 @@ const activeShadow = "absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-r
                                             </li>
                                             <li>
                                                 <a class={currentPath === "projects" ? active : inactive } href="/projects">
-                                                    Projects
+                                                    Portfolio
                                                     <span class={currentPath === "projects" ? activeShadow : "hidden"}></span> 
                                                 </a>
                                             </li>

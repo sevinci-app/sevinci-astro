@@ -6,7 +6,10 @@ import mdx from "@astrojs/mdx";
 
 import alpinejs from "@astrojs/alpinejs";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), sitemap(), mdx(), alpinejs()]
+  integrations: [tailwind(), react(), sitemap(), mdx(), alpinejs()],
+  adapter: cloudflare()
 });
