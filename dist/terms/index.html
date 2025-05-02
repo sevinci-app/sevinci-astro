@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en" class="h-full antialiased light"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.6.1"><title>Sevinci Sarl - Web Design & Innovation Agency</title><!-- Favicon --><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><script>
+        // The configured mode is stored in local storage
+        const isDarkMode = localStorage.getItem('theme');
+        
+        // Set theme to 'dark' if darkMode = 'true'
+        const themeMode = isDarkMode === 'true' ? 'dark' : '';
+    
+        // Put dark class on html tag to enable dark mode
+        document.querySelector("html").className = themeMode;
+    
+      </script><link rel="stylesheet" href="/_astro/about.By0gC6MI.css"><script type="module" src="/_astro/page.Ch3olwkR.js"></script></head> <body class="flex h-full bg-zinc-50 dark:bg-black"> <div class="flex w-full"> <div class="fixed inset-0 flex justify-center sm:px-8"> <div class="flex w-full max-w-7xl lg:px-8"> <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div> </div> </div> <div class="relative flex w-full flex-col"> <script>
+                const theme = localStorage.getItem("theme") || "dark";
+                document.documentElement.dataset.theme = theme;
+              </script> <header class="pointer-events-none relative z-30 flex flex-none flex-col" style="height:var(--header-height);margin-bottom:var(--header-mb)"> <div class="top-0 z-20 h-16 pt-6" style="position:var(--header-position)"> <div class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full" style="position:var(--header-inner-position)"> <div class="mx-auto w-full max-w-7xl lg:px-8"> <div class="relative px-4 sm:px-8 lg:px-12"> <div class="mx-auto max-w-2xl lg:max-w-5xl"> <div class="relative flex gap-4"> <div class="flex flex-1"> <div class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-2 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 hover:ring-red-500 dark:hover:ring-red-500"> <a aria-label="Home" class="pointer-events-auto" href="/"> <img src="/_astro/logo.CBpN5cnU_1H6uXc.webp" alt="gabriel avatar" width="400" height="400" loading="lazy" decoding="async" class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"> </a> </div> </div> <div class="flex flex-1 justify-end md:justify-center" x-data="{ showMenu: false }" x-cloak> <div class="pointer-events-auto md:hidden"> <button x-on:click="showMenu = !showMenu" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:R2miqla:">
+Menu
+<svg viewBox="0 0 8 6" aria-hidden="true" class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400"> <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </button> </div> <div style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none"></div> <div x-cloak x-show="showMenu" x-on:click.outside="showMenu = false" class="pointer-events-auto absolute inset-x-4 z-50 origin-top rounded-3xl bg-white ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"> <ul class="rounded-xl bg-white/90 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/">
+Home
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/about">
+About
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/plans">Plans</a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/projects">
+Portfolio
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/blog">
+Blog
+<span class="hidden"></span> </a> </li> </ul> </div> <nav class="pointer-events-auto hidden md:block"> <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/">
+Home
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/about">
+About
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/plans">Plans</a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/projects">
+Portfolio
+<span class="hidden"></span> </a> </li> <li> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/blog">
+Blog
+<span class="hidden"></span> </a> </li> </ul> </nav> </div> <div class="flex justify-end md:flex-1"> <div class="pointer-events-auto"> <span class="flex group rounded-full bg-white/90 p-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 hover:ring-zinc-300 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"> <button id="themeToggle" type="button" class="hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-neutral-400 group-hover:text-neutral-500 font-medium" data-hs-theme-click-value="dark"> <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> </button> <button id="themeToggle" type="button" class="hs-dark-mode-active:block hidden hs-dark-mode group flex items-center font-medium dark:text-yellow-400 dark:hover:text-yellow-500" data-hs-theme-click-value="light"> <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 8a2 2 0 1 0 4 4"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg> </button> </span> <script>
+    const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+            return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
+    })();
+  
+    if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else {
+        document.documentElement.classList.add('dark');
+    }
+  
+    window.localStorage.setItem('theme', theme);
+  
+    const handleToggleClick = () => {
+        const element = document.documentElement;
+        element.classList.toggle("dark");
+  
+        const isDark = element.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
+  
+    document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+  </script> </div> </div> </div> </div> </div> </div> </div> </div> </header> <main class="flex-auto">  <div class="prose prose-zinc dark:prose-invert mx-auto px-4 py-8"> <h1 id="terms-of-service">Terms of Service</h1>
+<p>Last Updated: 2025/04/10</p>
+<h2 id="0-definitions">0. Definitions</h2>
+<ul>
+<li><strong>Client</strong>: The individual or entity purchasing services from Sevinci.</li>
+<li><strong>Plans</strong>: Website service packages offered as Starter, Pro, or Premium tiers.</li>
+<li><strong>Custom Development</strong>: Tailored features or functionality built beyond the scope of standard Plans.</li>
+<li><strong>Maintenance</strong>: Recurring services including updates, backups, and security patches.</li>
+<li><strong>Deliverables</strong>: Any digital assets provided to the client, such as websites, code, reports, or documentation.</li>
+</ul>
+<h2 id="1-services--acceptance">1. Services &#x26; Acceptance</h2>
+<h3 id="11-what-we-provide">1.1 What We Provide</h3>
+<p>Sevinci delivers digital solutions for health/sports/education sectors, including:</p>
+<ul>
+<li><strong>AI-Enhanced Websites</strong>: Custom designs with automation tools (forms, booking systems)<br>
+<em>Disclaimer: AI outputs may require human review; we don’t guarantee accuracy.</em></li>
+<li><strong>Client Growth Tools</strong>: SEO, analytics, and lead capture systems<br>
+<em>Note: We enable tools but don’t promise specific results.</em></li>
+<li><strong>Full Technical Stack</strong>: Hosting, maintenance, and third-party integrations (view section 9)</li>
+</ul>
+<h3 id="12-who-we-serve">1.2 Who We Serve</h3>
+<ul>
+<li><strong>Clients</strong>: Businesses (B2B) and individuals (B2C), primarily in EU/Switzerland</li>
+<li><strong>Delivery</strong>: Electronic only (no physical contracts unless agreed)</li>
+</ul>
+<h4 id="specialized-services"><strong>Specialized Services</strong></h4>
+<ul>
+<li><strong>Custom Development Work</strong>: Tailored features beyond standard plans. Paid 50% upfront, and 50% on delivery.</li>
+<li><strong>Innovation Consulting</strong>: Technology adoption studies. Service Design studies. Workflow automation audits</li>
+</ul>
+<p><em>All services are delivered electronically unless otherwise agreed in writing.</em></p>
+<h2 id="2-services--pricing">2. Services &#x26; Pricing</h2>
+<h3 id="21-services-overview">2.1 Services Overview</h3>
+<p>Sevinci specializes in:</p>
+<ul>
+<li>Design &#x26; Development of custom website creation for health, sports, and education businesses</li>
+<li>AI automation workflow integration to streamline client operations</li>
+<li>Ongoing maintenance and optimization</li>
+</ul>
+<p><em>All services are delivered electronically unless otherwise agreed in writing.</em></p>
+<h3 id="22-service-plans">2.2 Service Plans</h3>
+<p>Sevinci offers three tiers of website services:</p>
+<ul>
+<li><strong>Starter/Pro/Premium Plans</strong> <em>(One-time fee, CHF 600–1,200)</em>: Includes design, development, and 1 year of hosting/support. Client must provide all content (text/images) within 14 days of project kickoff. Delays may extend timelines.</li>
+<li><strong>Maintenance Plans</strong> <em>(Recurring annual fee, CHF 200–300)</em>: Covers updates, security patches, and backups. Auto-renews unless canceled (see Termination).</li>
+<li><strong>Custom Development</strong> <em>(50% upfront, 50% on delivery)</em>: Tailored solutions beyond standard plans.</li>
+</ul>
+<h3 id="24-pricing-modifications">2.4 Pricing Modifications</h3>
+<p>Sevinci reserves the right to adjust service prices at any time. Clients will be notified via email 90 days prior to changes taking effect.</p>
+<ul>
+<li>For Maintenance Plans: New pricing applies at the next billing cycle.</li>
+<li>For One-Time Plans: Price changes only affect new purchases.</li>
+</ul>
+<p><em>Example: If maintenance increases from CHF 200 to 250/year, clients paying in January will be notified by October 1st.</em></p>
+<h2 id="3-payments--refunds">3. Payments &#x26; Refunds</h2>
+<h3 id="31-payment-terms">3.1 Payment Terms</h3>
+<ul>
+<li>Website Plans (Starter/Pro/Premium): 100% upfront payment required</li>
+<li>Maintenance Services: 100% upfront annual payment</li>
+<li>Custom Development: 50% deposit before work begins. 50% balance due upon delivery. Invoices are due as specified (no late fees, but unpaid invoices may pause work).</li>
+<li>Unauthorized chargebacks may result in service suspension and recovery actions, including legal recourse if necessary.</li>
+</ul>
+<h3 id="32-late-payments">3.2 Late Payments</h3>
+<ul>
+<li>Services will be paused after 60 days for unpaid invoices</li>
+<li>No late fees, but reinstatement requires full payment</li>
+</ul>
+<h3 id="33-client-obligations">3.3 Client Obligations</h3>
+<p>The Client agrees to:</p>
+<ul>
+<li>Provide accurate, lawful content (no illegal material under Swiss/EU laws).</li>
+<li>Respond to feedback requests within 2 weeks of project completion.</li>
+</ul>
+<h3 id="34-refund-policy">3.4 Refund Policy</h3>
+<p>Refunds are prorated based on work completed:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Service</th><th>Before Start</th><th>Mid-Project</th><th>After Delivery</th></tr></thead><tbody><tr><td><strong>Plans</strong></td><td>100% refund</td><td>75% refund</td><td>50% refund</td></tr><tr><td><strong>Maintenance</strong></td><td>Full refund</td><td>Prorated by months**</td><td>Prorated by months**</td></tr><tr><td><strong>Custom Work</strong></td><td>100% refund</td><td>50% refund***</td><td>No refunds</td></tr></tbody></table>
+<p>**E.g., If canceled after 6 months of annual maintenance, 50% is refunded.<br>
+***Custom work mid-project refunds deduct CHF 100/hour for work completed.</p>
+<h2 id="4-intellectual-property-ip-rights">4. Intellectual Property (IP) Rights</h2>
+<p>Clients are granted a license to:</p>
+<ul>
+<li>Use the delivered website for their business.</li>
+<li>Modify content, but not resell our proprietary systems.</li>
+<li>This license is non-transferable, non-sublicensable, and valid for the duration of the client’s active use of Sevinci services or deliverables.</li>
+<li>For long-term projects or in cases where the client ceases Sevinci services but continues using the website, the license remains perpetual, unless otherwise negotiated in writing.</li>
+</ul>
+<p>Sevinci retains ownership of all:</p>
+<ul>
+<li>Pre-existing code, templates, and tools (e.g., Corazon CMS).</li>
+<li>Custom-developed modules unless separately negotiated.</li>
+</ul>
+<h2 id="5-liability--disclaimers">5. Liability &#x26; Disclaimers</h2>
+<h3 id="51-service-limitations">5.1 Service Limitations</h3>
+<p>Sevinci cannot guarantee:</p>
+<ul>
+<li>Specific client acquisition numbers</li>
+<li>Sales conversions from website visitors</li>
+<li>Hosting uptime depends on third-party provider (Kreativmedia). We’ll assist with migrations if outages exceed 72 hours.</li>
+<li>Third-party integrations (e.g., Stripe, Google Maps) are subject to their own terms.</li>
+<li>AI-generated content (e.g., chatbots, automated responses) may contain inaccuracies. Clients are responsible for reviewing all AI outputs before use.</li>
+</ul>
+<h3 id="52-liability-cap">5.2 Liability Cap</h3>
+<p>Sevinci is <strong>not liable</strong> for:</p>
+<ul>
+<li>Indirect damages (e.g., lost profits, data breaches).</li>
+<li>Client-provided content violations (e.g., copyright infringement).</li>
+</ul>
+<h3 id="53-gdpr">5.3 GDPR</h3>
+<ul>
+<li>For clients in the EU, data processing follows our Privacy Policy and complies with GDPR requirements.</li>
+</ul>
+<h2 id="6-termination">6. Termination</h2>
+<h3 id="61-by-client">6.1 By Client</h3>
+<ul>
+<li>May cancel mid-project with a 50% fee for work completed.</li>
+<li>Maintenance plans can be canceled via email (no refunds for current billing cycle).</li>
+<li>Cancellation fees are calculated based on hours worked at CHF 100/hour, not to exceed 50% of total project cost</li>
+</ul>
+<h3 id="62-by-sevinci">6.2 By Sevinci</h3>
+<p>We may terminate for:</p>
+<ul>
+<li>Non-payment (after 30 days’ notice).</li>
+<li>Abuse (e.g., illegal content, no notice required).</li>
+</ul>
+<h2 id="7-dispute-resolution">7. Dispute Resolution</h2>
+<ul>
+<li>Mediation may be conducted remotely via video conferencing if mutually agreed.</li>
+<li>Arbitration: Unresolved disputes go to binding arbitration under Swiss law.</li>
+<li>Court: Legal actions must be filed in Switzerland.</li>
+</ul>
+<h2 id="8-support--revisions">8. Support &#x26; Revisions</h2>
+<h3 id="81-included-support">8.1 Included Support:</h3>
+<ul>
+<li>Bug fixes, security updates,</li>
+<li>CMS version compatibility maintenance.</li>
+<li>Plan-specific revisions:</li>
+<li>Starter: 2 free revisions/year</li>
+<li>Pro: 3 free revisions/year</li>
+<li>Premium: 4 free revisions/year</li>
+</ul>
+<h3 id="82-revision-policy">8.2 Revision Policy</h3>
+<p>Free revisions:</p>
+<ul>
+<li>Starter: 2/year</li>
+<li>Pro: 3/year</li>
+<li>Premium: 4/year</li>
+</ul>
+<h3 id="83-exclusions">8.3 Exclusions</h3>
+<ul>
+<li>Complete redesigns or new features</li>
+<li>Additional changes and custom development: Billed at CHF 100/hour</li>
+</ul>
+<h2 id="9-third-party-services">9. Third-Party Services</h2>
+<p>Sevinci may add, modify, or discontinue third-party integrations without prior consent, including but not limited to:</p>
+<ul>
+<li>Payment processors (e.g., Stripe, PayPal)</li>
+<li>Hosting providers (currently Kreativmedia)</li>
+<li>CMS/AI tools (e.g., Corazon updates, plugin replacements)</li>
+<li>Sevinci will make reasonable efforts to maintain or enhance the functionality of services when making changes to third-party integrations.</li>
+</ul>
+<p>Clients will be notified of changes that materially affect their services.</p>
+<h2 id="10-general-provisions">10. General Provisions</h2>
+<ul>
+<li>Notices &#x26; Communication: All official communications, including invoices, updates, or service changes, will be sent via email. Notices are considered received 24 hours after the email is sent to the client’s last known address, unless a delivery failure is received.</li>
+<li>Force Majeure: Sevinci is not liable for delays or failures in performance due to circumstances beyond our reasonable control, including but not limited to natural disasters, wars, acts of terrorism, pandemics, government restrictions, labor strikes, internet outages, or failures by hosting providers.</li>
+</ul>
+<h2 id="11-change-log">11. Change Log</h2>
+<ul>
+<li><strong>2025/04/10:</strong> Major update: clarified IP licensing, chargeback handling, dispute resolution, and third-party integration policies. Added Definitions and Notices clauses.</li>
+</ul> </div>  </main> <footer class="mt-32 flex-none"> <div class="sm:px-8"> <div class="mx-auto w-full max-w-7xl lg:px-8"> <div class="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40"> <div class="relative px-4 sm:px-8 lg:px-12"> <div class="mx-auto max-w-2xl lg:max-w-5xl"> <div class="flex flex-col items-center justify-between gap-6 sm:flex-row"> <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200"> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/">Home</a> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/about">About</a> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/plans">Plans</a> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/projects">Portfolio</a> <a class="relative block px-3 py-2 transition hover:text-red-500 dark:hover:text-red-400" href="/blog">Blog</a> </div> <p class="text-sm text-zinc-500 dark:text-zinc-400">
+© <!-- -->2025<!-- --> Sevinci Sarl. All rights reserved.
+<span class="mx-1">•</span> <a href="/terms" class="hover:text-red-500 dark:hover:text-red-400">Terms</a> <span class="mx-1">•</span> <a href="/privacy" class="hover:text-red-500 dark:hover:text-red-400">Privacy</a> </p> </div> </div> </div> </div> </div> </div> </footer> </div> </div> <script type="module" src="/_astro/MainLayout.astro_astro_type_script_index_0_lang.BtJH9R_r.js"></script> </body> </html>
